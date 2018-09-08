@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ListaTelefonicaDBModelStoreContainer" CdmEntityContainer="ListaTelefonicaDBEntities">
+    <EntitySetMapping Name="Pessoas">
+      <EntityTypeMapping TypeName="ListaTelefonicaDBModel.Pessoa">
+        <MappingFragment StoreEntitySet="Pessoas">
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="data_nascimento" ColumnName="data_nascimento" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Telefones">
+      <EntityTypeMapping TypeName="ListaTelefonicaDBModel.Telefone">
+        <MappingFragment StoreEntitySet="Telefones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ddd" ColumnName="ddd" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="pessoa_id" ColumnName="pessoa_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
